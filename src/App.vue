@@ -1,11 +1,14 @@
 <template>
   <div id="app">
-    <router-view/>
+    <consumption-form></consumption-form>
   </div>
 </template>
 
 <script>
+import ConsumptionForm from './components/ConsumptionForm'
+
 export default {
+  components: {ConsumptionForm},
   name: 'app'
 }
 </script>
