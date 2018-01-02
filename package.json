@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "start": "run-p api-dev dev",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
@@ -20,6 +20,7 @@
     "babel-watch": "^2.0.7",
     "express": "latest",
     "mathjs": "^3.18.1",
+    "npm-run-all": "^4.1.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "xml-to-json-promise": "0.0.3"
